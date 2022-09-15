@@ -114,7 +114,7 @@ main{margin-bottom:30px;}
 article img{width:100%;}
 .con{
   margin:0px auto;
-  max-width:500px;
+  max-width:414px;
   display:grid;
   padding:0px 1%;
   box-sizing: border-box;
@@ -127,6 +127,11 @@ article img{width:100%;}
   "notice"  
   "news";
 }
+
+@media screen and (max-width:476px) {
+  .con{width:100%;}
+}
+
 .con > h2{display:none;}
 .con article{
   /* background:#ffff00; */
