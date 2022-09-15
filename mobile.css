@@ -1,0 +1,179 @@
+@charset "utf-8";
+
+@media screen and (max-width:767px) {
+
+  /* 모바일 서식 */
+header{}
+.header_inner{
+  width:100%;
+  height:70px;
+  box-shadow: 0px 0px 3px rgb(63,63,63);
+  background:#ffffff;
+}
+.header_inner h1{
+  text-align:center;
+}
+.header_inner h1 img{
+  height:60px;
+  padding-top:8px;
+}
+
+/* 햄버거 메뉴, 검색버튼 위치 지정 */
+.toggle_btn, i.fa-search{
+  position:absolute;top:14px;
+  font-size:2rem;
+  padding:5px;
+  cursor:pointer;
+}
+.toggle_btn{left:14px;}
+i.fa-search{
+  right:14px;font-size:1.7rem;
+  padding-top:12px;
+}
+
+.gnb{
+  width:100%;height:100%;
+  position:fixed;
+  left:-100%;top:0px;
+  background:rgba(0,0,0,.8);
+  transition:0.5s;
+  z-index:1000;
+}
+.gnb label[for=toggle]{
+  position:absolute;
+  top:10px;right:20px;
+  color:#fff;
+  font-size:2.5rem;
+  padding:10px;
+}
+
+/* 상단 lnb메뉴 서식 */
+.lnb{
+  position:fixed;  width:100%;
+  top:380px;  left:-100%;
+  z-index:1001;  transition:0.5s;
+}
+.lnb ul{text-align:center;}
+.lnb ul > li{
+  width:48%;
+  display:inline-block;
+  background:rgb(107,107,107);
+  text-align:center;  margin-bottom:5px;
+}
+.lnb ul > li > a{
+  display:block;  line-height:300%;
+  text-transform:uppercase;  color:#fff;
+  border:none;}
+/* 상단검색박스 서식 */
+.lnb ul > li:last-child{
+  position:absolute;
+  top:-320px;left:26%;background:none;
+}
+.lnb ul > li:last-child input{  height:30px;}
+.lnb ul > li:last-child i.fa-search{
+  position:absolute;  top:-10px;left:90%;
+  color:#fff;font-size:1.8rem;
+}
+
+/* 메인메뉴 서식 */
+.gnb > ul{
+  width:100%;
+  padding-top:120px;
+}
+.gnb > ul > li{
+  border-bottom:1px solid #fff;
+  text-indent:20px;
+}
+.gnb > ul > li > a{
+  color:#fff;
+  display:block;
+  line-height:280%;
+  font-size:1rem;
+}
+.gnb li i.fa-angle-down{
+  clear:right;  float:right;
+  font-size:1.4rem;
+  transform:translate(-10px,12px);
+}
+
+.sub{display:none;}
+
+/* 햄버거메뉴 클릭시 .gnb, .lnb 날아오게... */
+#toggle:checked + header .gnb{left:0px;}
+#toggle:checked + header .lnb{left:0px;}
+
+/* 메인콘텐츠 서식 */
+main{margin-bottom:30px;}
+.slide{
+  width:100%;
+  /* height:100vh;vertical height */
+  /* height:calc(100vh - 10vh); */
+}
+
+.pcslide{display:none;}
+article img{width:100%;}
+.con{
+  margin:0px auto;
+  max-width:414px;
+  display:grid;
+  padding:0px 1%;
+  box-sizing: border-box;
+  grid-template-columns: auto;
+  grid-template-areas:
+  "item"
+  "brand"
+  "ad"
+  "store"
+  "notice"  
+  "news";
+}
+
+@media screen and (max-width:476px) {
+  .con{width:100%;}
+}
+
+.con > h2{display:none;}
+.con article{
+  /* background:#ffff00; */
+  /* height:270px; */
+  margin-bottom:10px;
+}
+.con .new_item{grid-area:item;}
+.con .brand{grid-area:brand;}
+.con .ad{grid-area:ad;}
+.con .notice{grid-area:notice;}
+.con .store{grid-area:store;}
+.con .news{grid-area:news;}
+
+.brand_banner{
+  display:block;
+  width:100%;
+  height:164px;
+  background-size:100%;
+  background-repeat: no-repeat;
+  text-indent:-9999px;
+}
+.store a{
+  display:block;
+  background-repeat: no-repeat;
+  background-size:100%;
+  background-position:center;
+  text-indent:-9999px;
+  height:190px;
+}
+
+/* 푸터영역 서식 */
+footer{
+  padding:10px 0px;
+}
+footer a{font-weight:500;}
+.f_lnb, .sns{
+  text-align:center;
+  line-height:160%;
+}
+.f_lnb li, .sns li{
+  display:inline-block;
+}
+.sns{padding:16px 0px;}
+
+}
