@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+/*웹폰트*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+
+body{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size:12px;
+  color:#333333;
+}
+
+a{
+  text-decoration:none;
+  color:#333333;
+}
+input[type='checkbox']{display:none;}
+
+.slide > h2, .new_item > h2, .brand > h2, .ad > h2, .store > h2{display:none;}
+
+.brand_banner{
+  background-image:url('../images/mbn0202.png');
+}
+.brand_banner:hover{
+  background-image:url('../images/mbn0202ov.png');
+}
+
+.store a{background-image:url('../images/mbn04.png');}
+.store a:hover{background-image:url('../images/mbn04ov.png');}
+
+/* 뉴스, 공지사항 목록 서식 */
+.notice > h2, .news > h2{
+  font-family: 'Times New Roman', Times, serif;
+  font-size:24px;
+  border-bottom:1px solid #333;
+  padding:5px 0px;
+}
+i.fa-plus{
+  float:right;
+  font-size:12px;
+  border:1px solid #333;
+  padding:2px 3px 1px 3px;
+  transform:translateY(5px);
+}
+.notice ul, .news ul{
+  padding-top:6px;
+}
+.notice li, .news li{
+  line-height:220%;
+  text-indent:10px;
+  max-width:450px;
+  overflow:hidden; /*영역을 벗어난 콘텐츠 숨기기*/
+  text-overflow: ellipsis; /* 텍스트가 넘치면 생략기호 나오게 하기*/
+  white-space: nowrap; /* 글자 다음줄로 넘기지 않기 */
+}
+.notice a:hover, .news a:hover{
+  text-decoration:underline;
+}
+
+
+footer{
+  border-top:1px solid #333333;
+}
+footer > address{
+  font-style:normal;
+  text-align:center;
+  line-height:160%;
+}
