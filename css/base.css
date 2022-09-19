@@ -7,6 +7,7 @@ body{
   font-family: 'Noto Sans KR', sans-serif;
   font-size:12px;
   color:#333333;
+  background-image:url('../images/bg01.jpg');
 }
 
 a{
@@ -14,6 +15,12 @@ a{
   color:#333333;
 }
 input[type='checkbox']{display:none;}
+
+header, .store{
+  background-color:#ffffff;
+}
+
+#sh{text-align:center;}
 
 .slide > h2, .new_item > h2, .brand > h2, .ad > h2, .store > h2{display:none;}
 
@@ -30,27 +37,27 @@ input[type='checkbox']{display:none;}
 /* 뉴스, 공지사항 목록 서식 */
 .notice > h2, .news > h2{
   font-family: 'Times New Roman', Times, serif;
-  font-size:24px;
+  font-size:1.6rem;
   border-bottom:1px solid #333;
-  padding:5px 0px;
+  padding:6px 1.2% 0 1.2%;
+  line-height:40px;
+  margin-bottom:10px;
 }
 i.fa-plus{
   float:right;
   font-size:12px;
   border:1px solid #333;
   padding:2px 3px 1px 3px;
-  transform:translateY(5px);
-}
-.notice ul, .news ul{
-  padding-top:6px;
+  transform:translateY(10px);
 }
 .notice li, .news li{
-  line-height:220%;
-  text-indent:10px;
-  max-width:450px;
+  line-height:210%;
   overflow:hidden; /*영역을 벗어난 콘텐츠 숨기기*/
   text-overflow: ellipsis; /* 텍스트가 넘치면 생략기호 나오게 하기*/
   white-space: nowrap; /* 글자 다음줄로 넘기지 않기 */
+}
+.notice a, .news a{
+  font-size:0.8rem;
 }
 .notice a:hover, .news a:hover{
   text-decoration:underline;
@@ -58,6 +65,7 @@ i.fa-plus{
 
 
 footer{
+  background:rgba(255,255,255,0.7);
   border-top:1px solid #333333;
 }
 footer > address{

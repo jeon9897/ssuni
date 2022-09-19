@@ -5,12 +5,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>쑤니 디저트카페 반응형웹</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./images/favi.ico">
   <!-- 1. 초기화 -->
   <link href="./css/reset.css" rel="stylesheet" type="text/css">
   <!-- 2. 공통서식 -->
   <link href="./css/base.css" rel="stylesheet" type="text/css">
   <!-- 3. 모바일 화면서식 -->
   <link href="./css/mobile.css" rel="stylesheet" type="text/css">
+  <!-- 4. tablet 화면서식 -->
+  <link href="./css/tablet.css" rel="stylesheet" type="text/css">
+  <!-- 5. pc 화면서식 -->
+  <link href="./css/pc.css" rel="stylesheet" type="text/css">
 
   <!-- 플렉스 슬라이드 서식 -->
   <link href="./css/flexslider.css" rel="stylesheet" type="text/css">
@@ -50,7 +55,7 @@
           <li><a href="login.html" title="로그인">login</a></li>
           <li><a href="admin.html" title="관리자">admin</a></li>
           <li>
-            <input type="search" id="sh">
+            <input type="search" id="sh" placeholder="검색어입력">
             <label for="sh"> <i class="fas fa-search"></i></label>
           </li>
         </ul>
@@ -59,7 +64,8 @@
       <!-- 모바일용 햄버거 메뉴와 검색아이콘 -->
       <label for="toggle" class="toggle_btn"><i class="fas fa-bars"></i></label>
 
-      <i class="fas fa-search"></i>
+      <i class="fas fa-search s1"></i>
+      </div>
 
       <!-- 메인메뉴 -->
       <nav class="gnb">
@@ -105,7 +111,6 @@
           </li>
         </ul>
       </nav>
-    </div>
   </header>
 
   <!-- 메인콘텐츠 시작 -->

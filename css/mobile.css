@@ -3,7 +3,11 @@
 @media screen and (max-width:767px) {
 
   /* 모바일 서식 */
-header{}
+header{
+  position:absolute;
+  width:100%;
+  z-index:1000;
+}
 .header_inner{
   width:100%;
   height:70px;
@@ -71,7 +75,7 @@ i.fa-search{
 }
 .lnb ul > li:last-child input{  height:30px;}
 .lnb ul > li:last-child i.fa-search{
-  position:absolute;  top:-10px;left:90%;
+  position:absolute;  top:-10px;left:94%;
   color:#fff;font-size:1.8rem;
 }
 
@@ -103,7 +107,10 @@ i.fa-search{
 #toggle:checked + header .lnb{left:0px;}
 
 /* 메인콘텐츠 서식 */
-main{margin-bottom:30px;}
+main{
+  padding-top:70px;
+  margin-bottom:30px;
+}
 .slide{
   width:100%;
   /* height:100vh;vertical height */
@@ -113,8 +120,8 @@ main{margin-bottom:30px;}
 .pcslide{display:none;}
 article img{width:100%;}
 .con{
-  margin:0px auto;
-  max-width:414px;
+  /* margin:0px auto; */
+  /* max-width:414px; */
   display:grid;
   padding:0px 1%;
   box-sizing: border-box;
@@ -134,8 +141,6 @@ article img{width:100%;}
 
 .con > h2{display:none;}
 .con article{
-  /* background:#ffff00; */
-  /* height:270px; */
   margin-bottom:10px;
 }
 .con .new_item{grid-area:item;}
@@ -156,10 +161,15 @@ article img{width:100%;}
 .store a{
   display:block;
   background-repeat: no-repeat;
-  background-size:100%;
+  background-size:90%;
   background-position:center;
   text-indent:-9999px;
   height:190px;
+}
+.notice li, .news li{
+  text-indent:10px;
+  min-width:320px;
+  max-width:414px;
 }
 
 /* 푸터영역 서식 */
